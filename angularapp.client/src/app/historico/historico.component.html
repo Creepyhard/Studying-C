@@ -1,0 +1,19 @@
+<h1 datatable [dtOptions]="dtoptions" [dtTrigger]="dtTrigger" id="tableLabel">Historico</h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th>Tentativa</th>
+    <th>Data e Hora</th>
+    <th>Resultado</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let historico of historicos">
+    <td>{{ historico.codigoUsuario }}</td>
+    <td>{{ historico.tentativa }}</td>
+    <td>{{ historico.dataHora }}</td>
+    <td>{{ historico.resultado }}</td>
+  </tr>
+  </tbody>
+</table>
